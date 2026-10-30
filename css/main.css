@@ -1,0 +1,121 @@
+/* Styles for the Portfolio website */
+
+/* Main styles */
+
+/* Hero section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.hero-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 175px;
+}
+
+.job-position {
+    background-color: #0A1F2A;
+    color: #20CCE3;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 22px;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.hi {
+    font-size: 47px;
+    color: white;
+    margin-right: 12px;
+}
+.name-container .name {
+    font-size: 48px;
+    background: linear-gradient(135deg, #22D3EE, #3B82F6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.description {
+    color: #7388A1;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.project-link, .contact-link {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 13px 20px;
+    border-radius: 10px;  
+    text-decoration: none;
+}
+
+.hero-buttons {
+    margin-bottom: 50px;
+}
+
+.project-link {
+    background: linear-gradient(135deg, #22D3EE, #3B82F6);
+    color: #04121A;
+    margin-right: 8px;
+}
+
+.contact-link {
+    color: white;
+    border: 1px solid #152032;
+}
+
+.technologies-title {
+    color: #7388A1;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.technologies-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.technology {
+    background-color: #0E1624;
+    color: white;
+    font-size: 13px;
+    padding: 8px 12px;
+    border: 1px solid #152032;
+    border-radius: 8px;
+}
+
+
+
+.photo {
+    background-color: #0E1624;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 280px;
+    border: 1px solid #152032;
+    border-radius: 30px;
+}

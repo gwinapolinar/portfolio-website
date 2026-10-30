@@ -1,0 +1,57 @@
+/* Styles for the Portfolio website */
+
+/* Header styles #070B14 */
+.header {
+    background-color: #070B14;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 80px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #26C8EF;
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.name {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.nav-link {
+    color: #6A6E82;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hire-button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 20px;  
+    background: linear-gradient(135deg, #22D3EE, #3B82F6);
+    color: #04121A; 
+    text-decoration: none;
+    
+}
