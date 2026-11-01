@@ -9,7 +9,11 @@
 .open-to-title,
 .featured-title,
 .skills-header,
-.services-header {
+.services-header,
+.contact-header,
+.email-header,
+.github-header,
+.linkedin-header {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -22,7 +26,8 @@
 .open-to-title,
 .featured-title,
 .skills-header,
-.services-header {
+.services-header,
+.contact-header {
     color: var(--accent);
 }
 
@@ -30,7 +35,8 @@
 .about-me,
 .featured-title,
 .skills-header,
-.services-header {
+.services-header,
+.contact-header {
     margin-bottom: 22px;
 }
 
@@ -38,7 +44,8 @@
 .about-me-intro,
 .some-title,
 .skills-title,
-.services-title {
+.services-title,
+.contact-title {
     font-size: clamp(24px, 3.5vw, 35px);
     font-weight: 400;
     margin-bottom: 22px;
@@ -58,7 +65,8 @@
 .frontend-description,
 .backend-description,
 .other-technology-description,
-.service-description {
+.service-description,
+.contact-description {
     font-size: 14px;
     margin-bottom: 10px;
     font-weight: 350;
@@ -144,7 +152,8 @@
     text-decoration: none;
 }
 
-.project-link {
+.project-link,
+.contact-content .contact-link {
     background: var(--gradient);
     color: #04121A;
     margin-right: 8px;
@@ -324,4 +333,43 @@
     background: var(--gradient);
     border-radius: 10px;
     margin-bottom: 8px;
+}
+
+
+/* Contact section */
+.contact-container {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 50px;
+    width: 100%;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.email-header,
+.github-header,
+.linkedin-header {
+    color: var(--muted);
+    margin-bottom: 5px;
+}
+
+.email-content,
+.github-content,
+.linkedin-content {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-content .contact-link {
+    margin-top:10px;
+}
+
+.footer {
+    color: var(--muted);
+    font-size: 14px;
 }
