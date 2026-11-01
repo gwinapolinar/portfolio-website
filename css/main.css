@@ -8,7 +8,8 @@
 .building-title,
 .open-to-title,
 .featured-title,
-.skills-header {
+.skills-header,
+.services-header {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -20,21 +21,24 @@
 .building-title,
 .open-to-title,
 .featured-title,
-.skills-header {
+.skills-header,
+.services-header {
     color: var(--accent);
 }
 
 .job-position,
 .about-me,
 .featured-title,
-.skills-header {
+.skills-header,
+.services-header {
     margin-bottom: 22px;
 }
 
 .tagline,
 .about-me-intro,
 .some-title,
-.skills-title {
+.skills-title,
+.services-title {
     font-size: clamp(24px, 3.5vw, 35px);
     font-weight: 400;
     margin-bottom: 22px;
@@ -43,8 +47,9 @@
 .project-title,
 .frontend-title,
 .backend-title,
-.other-technology-title {
-    font-size: 22px;
+.other-technology-title,
+.service-title {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -52,11 +57,27 @@
 .project-technologies,
 .frontend-description,
 .backend-description,
-.other-technology-description {
-    font-size: 16px;
+.other-technology-description,
+.service-description {
+    font-size: 14px;
     margin-bottom: 10px;
     font-weight: 350;
 }
+
+.projects-container,
+.skills-container,
+.services-container {
+    width: 100%;
+}
+
+.projects-grid,
+.technology-grid,
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
 
 /* Hero section */
 .hero-info-container,
@@ -174,6 +195,7 @@
     border-radius: 30px;
 }
 
+
 /* About section */
 #about,
 #skills,
@@ -210,18 +232,8 @@
     margin-bottom: 20px;
 }
 
+
 /* Project section */
-.projects-container {
-    width: 100%;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    width: 100%;
-}
-
 .project-card {
     display: flex;
     flex-direction: column;
@@ -254,11 +266,8 @@
     justify-content: center;
 }
 
-/* Skills section */
-.skills-container {
-    width: 100%;
-}
 
+/* Skills section */
 .skills-container .technologies-container {
     margin-top: 0;
 }
@@ -267,12 +276,6 @@
     background-color: #102939;
     color: #1FCBE3;
     border-radius: 20px;
-}
-
-.technology-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
 }
 
 .frontend-card,
@@ -296,4 +299,29 @@
 .backend-description,
 .other-technology-description {
     color: var(--muted);
+}
+
+
+/* Services section */
+.service-card,
+.service-card-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.service-card-bottom {
+    margin-top: 30px;
+}
+
+.square-design {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient);
+    border-radius: 10px;
+    margin-bottom: 8px;
 }
