@@ -1,10 +1,25 @@
 /* Styles for the Portfolio website */
 
+:root {
+    --bg: #070B14;
+    --bg-alt: #0A1120;
+    --accent: #20CCE3;
+    --muted: #7388A1;
+    --surface: #0E1624;
+    --border: #152032;
+    --gradient: linear-gradient(135deg, #22D3EE, #3B82F6);
+    --page-gutter: clamp(20px, 6vw, 80px);
+}
+
 /* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Roboto, Arial;
     margin: 0;
-    background-color: #070B14;
+    background-color: var(--bg);
     color: white;
 }
 
@@ -14,10 +29,20 @@ p, h1, h2 {
 }
 
 section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: clamp(32px, 4vw, 60px);
     width: 100%;
     min-height: 100vh;
     min-height: 100dvh;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 90px max(var(--page-gutter), calc((100% - 1200px) / 2)) 48px;
     box-sizing: border-box;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
 }

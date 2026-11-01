@@ -1,127 +1,185 @@
 /* Styles for the Portfolio website */
 
-/* Main styles */
-
-/* Hero section */
-#hero, #about, #projects, #skills, #services, #contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 175px;
-}
-
-.job-position, .about-me {
-    color: #20CCE3;
+/* Shared styles */
+.job-position,
+.technologies-title,
+.about-me,
+.learning-title,
+.building-title,
+.open-to-title {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
-    display: inline-block;
-    border-radius: 20px;
-    margin-bottom: 22px;
+}
+
+.job-position,
+.about-me,
+.learning-title,
+.building-title,
+.open-to-title {
+    color: var(--accent);
+}
+
+/* Hero section */
+.hero-info-container,
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .job-position {
+    display: inline-block;
     background-color: #0A1F2A;
     padding: 8px 12px;
     border-radius: 20px;
 }
 
+.job-position,
+.about-me {
+    margin-bottom: 22px;
+}
+
 .name-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 12px;
+}
+
+.hi,
+.name-container .name {
+    font-size: clamp(32px, 5vw, 48px);
 }
 
 .hi {
-    font-size: 47px;
     color: white;
-    margin-right: 12px;
 }
+
 .name-container .name {
-    font-size: 48px;
-    background: linear-gradient(135deg, #22D3EE, #3B82F6);
+    background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.tagline, .about-me-intro {
-    font-size: 35px;
+.tagline,
+.about-me-intro {
+    font-size: clamp(24px, 3.5vw, 35px);
     font-weight: 400;
     margin-bottom: 22px;
 }
 
-.description, .about-me-description {
-    color: #7388A1;
+.description,
+.about-me-description {
+    color: var(--muted);
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
 }
 
-.project-link, .contact-link {
-    font-size: 13px;
-    font-weight: 500;
-    padding: 13px 20px;
-    border-radius: 10px;  
-    text-decoration: none;
+.description {
+    max-width: 730px;
 }
 
 .hero-buttons {
     margin-bottom: 50px;
 }
 
+.project-link,
+.contact-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 13px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 .project-link {
-    background: linear-gradient(135deg, #22D3EE, #3B82F6);
+    background: var(--gradient);
     color: #04121A;
     margin-right: 8px;
 }
 
 .contact-link {
     color: white;
-    border: 1px solid #152032;
+    border: 1px solid var(--border);
 }
 
 .technologies-title {
-    color: #7388A1;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    color: var(--muted);
 }
 
 .technologies-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    max-width: 730px;
+}
+
+.technology,
+.photo {
+    background-color: var(--surface);
+    color: white;
+    border: 1px solid var(--border);
 }
 
 .technology {
-    background-color: #0E1624;
-    color: white;
     font-size: 13px;
     padding: 8px 12px;
-    border: 1px solid #152032;
     border-radius: 8px;
 }
 
+.photo-container {
+    width: 100%;
+    max-width: 280px;
+}
+
 .photo {
-    background-color: #0E1624;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 350px;
-    width: 280px;
-    border: 1px solid #152032;
+    width: 100%;
+    aspect-ratio: 4 / 5;
     border-radius: 30px;
 }
 
-/* Projects section */
-#about, #skills, #contact {
-    background-color: #0A1120;
+/* About section */
+#about,
+#skills,
+#contact {
+    background-color: var(--bg-alt);
+}
+
+.about-me-container {
+    flex: 1 1 550px; 
+}
+
+.about-me-description {
+    max-width: 620px;
+}
+
+.learning-container {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1 1 360px;
+    max-width: 450px;
+}
+
+.learning-title,
+.building-title,
+.open-to-title {
+    margin-bottom: 10px;
+}
+
+.learning-content,
+.building-content,
+.open-to-content {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
