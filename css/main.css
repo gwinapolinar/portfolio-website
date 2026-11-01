@@ -6,7 +6,8 @@
 .about-me,
 .learning-title,
 .building-title,
-.open-to-title {
+.open-to-title,
+.featured-title {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -16,7 +17,8 @@
 .about-me,
 .learning-title,
 .building-title,
-.open-to-title {
+.open-to-title,
+.featured-title {
     color: var(--accent);
 }
 
@@ -37,7 +39,8 @@
 }
 
 .job-position,
-.about-me {
+.about-me,
+.featured-title {
     margin-bottom: 22px;
 }
 
@@ -65,7 +68,8 @@
 }
 
 .tagline,
-.about-me-intro {
+.about-me-intro,
+.some-title {
     font-size: clamp(24px, 3.5vw, 35px);
     font-weight: 400;
     margin-bottom: 22px;
@@ -182,4 +186,60 @@
 .open-to-content {
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+/* Project section */
+.projects-container {
+    width: 100%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    color: white;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.project-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-description,
+.project-technologies {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 350;
+}
+
+.project-info .project-link {
+    display: flex;
+    justify-content: center;
 }
