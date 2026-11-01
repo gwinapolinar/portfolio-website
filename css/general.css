@@ -4,8 +4,6 @@
 body {
     font-family: Roboto, Arial;
     margin: 0;
-    padding-left: 80px;
-    padding-right: 80px;
     background-color: #070B14;
     color: white;
 }
@@ -13,4 +11,13 @@ body {
 p, h1, h2 {
     padding: 0;
     margin: 0;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
 }
