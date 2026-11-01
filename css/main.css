@@ -7,7 +7,8 @@
 .learning-title,
 .building-title,
 .open-to-title,
-.featured-title {
+.featured-title,
+.skills-header {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -18,8 +19,43 @@
 .learning-title,
 .building-title,
 .open-to-title,
-.featured-title {
+.featured-title,
+.skills-header {
     color: var(--accent);
+}
+
+.job-position,
+.about-me,
+.featured-title,
+.skills-header {
+    margin-bottom: 22px;
+}
+
+.tagline,
+.about-me-intro,
+.some-title,
+.skills-title {
+    font-size: clamp(24px, 3.5vw, 35px);
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.project-title,
+.frontend-title,
+.backend-title,
+.other-technology-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-description,
+.project-technologies,
+.frontend-description,
+.backend-description,
+.other-technology-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 350;
 }
 
 /* Hero section */
@@ -36,12 +72,6 @@
     background-color: #0A1F2A;
     padding: 8px 12px;
     border-radius: 20px;
-}
-
-.job-position,
-.about-me,
-.featured-title {
-    margin-bottom: 22px;
 }
 
 .name-container {
@@ -65,14 +95,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.tagline,
-.about-me-intro,
-.some-title {
-    font-size: clamp(24px, 3.5vw, 35px);
-    font-weight: 400;
-    margin-bottom: 22px;
 }
 
 .description,
@@ -227,19 +249,51 @@
     color: white;
 }
 
-.project-title {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.project-description,
-.project-technologies {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 350;
-}
-
 .project-info .project-link {
     display: flex;
     justify-content: center;
+}
+
+/* Skills section */
+.skills-container {
+    width: 100%;
+}
+
+.skills-container .technologies-container {
+    margin-top: 0;
+}
+
+.skills-container .technology {
+    background-color: #102939;
+    color: #1FCBE3;
+    border-radius: 20px;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.frontend-card,
+.backend-card,
+.other-technology {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.frontend-card,
+.backend-card {
+    margin-bottom: 30px;
+}
+
+.frontend-description,
+.backend-description,
+.other-technology-description {
+    color: var(--muted);
 }
